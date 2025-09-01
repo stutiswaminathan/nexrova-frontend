@@ -1,0 +1,21 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="35" fill="#F9FAFB" stroke="#4FD1C5" stroke-width="2"/>
+  
+  <!-- WhatsApp chat bubble -->
+  <rect x="20" y="25" width="40" height="30" fill="#25D366" rx="8"/>
+  <polygon points="30,55 35,45 25,45" fill="#25D366"/>
+  
+  <!-- Message dots -->
+  <circle cx="30" cy="35" r="2" fill="white"/>
+  <circle cx="35" cy="35" r="2" fill="white"/>
+  <circle cx="40" cy="35" r="2" fill="white"/>
+  
+  <!-- Phone icon -->
+  <rect x="55" y="30" width="12" height="20" fill="#F5A623" rx="2"/>
+  <rect x="57" y="32" width="8" height="16" fill="#0A2540" rx="1"/>
+  
+  <!-- AI indicator -->
+  <circle cx="65" cy="45" r="3" fill="#4FD1C5"/>
+  <text x="65" y="47" text-anchor="middle" fill="white" font-family="Inter, sans-serif" font-size="6" font-weight="bold">AI</text>
+</svg>

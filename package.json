@@ -1,0 +1,22 @@
+{
+  "name": "agentic-ai-homepage",
+  "version": "1.0.0",
+  "description": "Agentic AI Receptionist - Hotel AI SaaS Homepage",
+  "main": "index.html",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --watch",
+    "build": "tailwindcss -i ./src/css/styles.css -o ./dist/styles.css --minify",
+    "serve": "npx serve ."
+  },
+  "keywords": ["hotel", "ai", "receptionist", "saas", "tailwind", "gsap"],
+  "author": "Agentic AI",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.32",
+    "autoprefixer": "^10.4.16"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

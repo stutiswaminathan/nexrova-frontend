@@ -1,0 +1,22 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="40" cy="40" r="35" fill="#F9FAFB" stroke="#4FD1C5" stroke-width="2"/>
+  
+  <!-- Chart bars -->
+  <rect x="25" y="45" width="8" height="20" fill="#F5A623" rx="2"/>
+  <rect x="35" y="35" width="8" height="30" fill="#4FD1C5" rx="2"/>
+  <rect x="45" y="25" width="8" height="40" fill="#0A2540" rx="2"/>
+  <rect x="55" y="30" width="8" height="35" fill="#F5A623" rx="2"/>
+  
+  <!-- Chart line -->
+  <path d="M25 50 L35 40 L45 30 L55 35" stroke="#0A2540" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Data points -->
+  <circle cx="25" cy="50" r="2" fill="#0A2540"/>
+  <circle cx="35" cy="40" r="2" fill="#0A2540"/>
+  <circle cx="45" cy="30" r="2" fill="#0A2540"/>
+  <circle cx="55" cy="35" r="2" fill="#0A2540"/>
+  
+  <!-- Analytics text -->
+  <text x="40" y="65" text-anchor="middle" fill="#0A2540" font-family="Inter, sans-serif" font-size="6" font-weight="bold">Analytics</text>
+</svg>

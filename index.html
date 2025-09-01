@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Receptionist - Revolutionizing Hotel Guest Experience</title>
+    <meta name="description" content="AI-powered receptionist for hotels. Reduce costs by 80%, improve guest satisfaction, and streamline operations with our intelligent hotel management solution.">
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <link href="./dist/styles.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+</head>
+<body class="font-body text-text bg-background">
+    <!-- Navigation -->
+    <header class="navbar fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
+        <div class="navbar-background absolute inset-0 transition-all duration-300"></div>
+        <nav class="container-custom relative">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <img src="./src/assets/logo.svg" alt="Agentic AI Receptionist" class="h-8 w-auto">
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#features" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">Features</a>
+                    <a href="#benefits" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">Benefits</a>
+                    <a href="#story" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">Story</a>
+                    <a href="#vision" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">Vision</a>
+                    <a href="#contact" class="text-primary hover:text-secondary transition-colors duration-200 focus-ring">Contact</a>
+                    <a href="#demo" class="btn-primary">Request Demo</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-button lg:hidden p-2 focus-ring" aria-label="Toggle mobile menu">
+                    <i data-lucide="menu" class="w-6 h-6 text-primary"></i>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu-overlay fixed inset-0 bg-black/50 z-40 hidden lg:hidden"></div>
+        <div class="mobile-menu fixed top-0 right-0 h-full w-80 bg-white shadow-brand-lg z-50 transform translate-x-full transition-transform duration-300 lg:hidden">
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-8">
+                    <img src="./src/assets/logo.svg" alt="Agentic AI Receptionist" class="h-8 w-auto">
+                    <button class="mobile-menu-button p-2 focus-ring">
+                        <i data-lucide="x" class="w-6 h-6 text-primary"></i>
+                    </button>
+                </div>
+                <div class="space-y-6">
+                    <a href="#features" class="block text-lg text-primary hover:text-secondary transition-colors duration-200">Features</a>
+                    <a href="#benefits" class="block text-lg text-primary hover:text-secondary transition-colors duration-200">Benefits</a>
+                    <a href="#story" class="block text-lg text-primary hover:text-secondary transition-colors duration-200">Story</a>
+                    <a href="#vision" class="block text-lg text-primary hover:text-secondary transition-colors duration-200">Vision</a>
+                    <a href="#contact" class="block text-lg text-primary hover:text-secondary transition-colors duration-200">Contact</a>
+                    <a href="#demo" class="btn-primary inline-block mt-4">Request Demo</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section section-padding pt-32 bg-gradient-to-br from-background to-primary/5">
+            <div class="container-custom">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <!-- Hero Content -->
+                    <div class="space-y-8">
+                        <h1 class="hero-title font-heading text-4xl lg:text-6xl font-bold text-primary leading-tight">
+                            AI Receptionist for 
+                            <span class="text-gradient">Modern Hotels</span>
+                        </h1>
+                        <p class="hero-subtitle text-xl text-text/80 leading-relaxed">
+                            Reduce operational costs by <strong class="text-secondary">₹50,000/month</strong> while improving guest satisfaction. 
+                            Our AI handles check-ins, bookings, and guest queries 24/7.
+                        </p>
+                        <div class="hero-cta flex flex-col sm:flex-row gap-4">
+                            <a href="#demo" class="btn-primary text-center">Start Free Trial</a>
+                            <a href="#features" class="btn-secondary text-center">See How It Works</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hero Illustration -->
+                    <div class="hero-illustration flex justify-center lg:justify-end">
+                        <img src="./src/assets/hero-illustration.svg" alt="AI Receptionist in action" class="w-full max-w-md animate-float">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="section-padding bg-white">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        The Hotel Reception Challenge
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        Traditional hotel reception is expensive, inconsistent, and limited by human availability. 
+                        Guests expect 24/7 service, but hotels struggle with staffing costs and quality.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h3 class="font-heading text-2xl font-semibold text-primary">Current Pain Points</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 mt-1 flex-shrink-0"></i>
+                                <span class="text-text/80">₹80,000/month staffing costs per receptionist</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 mt-1 flex-shrink-0"></i>
+                                <span class="text-text/80">Limited availability (8-10 hours/day)</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 mt-1 flex-shrink-0"></i>
+                                <span class="text-text/80">Inconsistent service quality</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i data-lucide="x-circle" class="w-6 h-6 text-red-500 mt-1 flex-shrink-0"></i>
+                                <span class="text-text/80">Language barriers and cultural differences</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-primary/5 p-8 rounded-2xl">
+                        <h4 class="font-heading text-xl font-semibold text-primary mb-6 text-center">Cost Comparison</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-red-50 rounded-lg">
+                                <span class="font-medium text-red-700">Human Receptionist</span>
+                                <span class="font-bold text-red-700">₹80,000/month</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-green-50 rounded-lg">
+                                <span class="font-medium text-green-700">AI Receptionist</span>
+                                <span class="font-bold text-green-700">₹30,000/month</span>
+                            </div>
+                            <div class="text-center pt-4">
+                                <span class="text-2xl font-bold text-secondary">60% Cost Savings</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution/Features Section -->
+        <section id="features" class="features-section section-padding bg-background">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Complete AI Reception Solution
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        Our AI receptionist handles all guest interactions seamlessly, 
+                        from check-in to check-out, with human-like understanding and efficiency.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card bg-white p-8 rounded-2xl shadow-brand hover:shadow-brand-lg transition-all duration-300 group">
+                        <div class="mb-6">
+                            <img src="./src/assets/feature-checkin.svg" alt="Smart Check-in" class="w-16 h-16 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-4 text-center">Smart Check-in</h3>
+                        <p class="text-text/70 text-center">
+                            Instant check-in with ID verification, room assignment, and digital key delivery. 
+                            No waiting, no queues.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card bg-white p-8 rounded-2xl shadow-brand hover:shadow-brand-lg transition-all duration-300 group">
+                        <div class="mb-6">
+                            <img src="./src/assets/feature-whatsapp.svg" alt="WhatsApp Integration" class="w-16 h-16 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-4 text-center">WhatsApp Support</h3>
+                        <p class="text-text/70 text-center">
+                            Guests can message directly via WhatsApp for instant support, 
+                            room service, and local recommendations.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card bg-white p-8 rounded-2xl shadow-brand hover:shadow-brand-lg transition-all duration-300 group">
+                        <div class="mb-6">
+                            <img src="./src/assets/feature-billing.svg" alt="Automated Billing" class="w-16 h-16 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-4 text-center">Automated Billing</h3>
+                        <p class="text-text/70 text-center">
+                            Seamless billing integration with instant invoice generation, 
+                            payment processing, and expense tracking.
+                        </p>
+                    </div>
+                    
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card bg-white p-8 rounded-2xl shadow-brand hover:shadow-brand-lg transition-all duration-300 group">
+                        <div class="mb-6">
+                            <img src="./src/assets/feature-analytics.svg" alt="Advanced Analytics" class="w-16 h-16 mx-auto group-hover:scale-110 transition-transform duration-300">
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-4 text-center">Advanced Analytics</h3>
+                        <p class="text-text/70 text-center">
+                            Real-time insights into guest behavior, occupancy rates, 
+                            and operational efficiency with actionable recommendations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits" class="benefits-section section-padding bg-white">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Benefits for Everyone
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        Our AI receptionist creates a win-win situation for both hotels and guests, 
+                        delivering superior service at a fraction of the cost.
+                    </p>
+                </div>
+                
+                <div class="benefits-content grid lg:grid-cols-2 gap-12">
+                    <!-- For Hotels -->
+                    <div class="space-y-6">
+                        <h3 class="font-heading text-2xl font-semibold text-primary mb-6">For Hotels</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 p-6 bg-green-50 rounded-xl">
+                                <i data-lucide="trending-up" class="w-8 h-8 text-green-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-green-800 mb-2">60% Cost Reduction</h4>
+                                    <p class="text-green-700">Save ₹50,000/month per receptionist position</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-6 bg-blue-50 rounded-xl">
+                                <i data-lucide="clock" class="w-8 h-8 text-blue-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-blue-800 mb-2">24/7 Availability</h4>
+                                    <p class="text-blue-700">Never miss a guest inquiry or booking opportunity</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-6 bg-purple-50 rounded-xl">
+                                <i data-lucide="bar-chart-3" class="w-8 h-8 text-purple-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-purple-800 mb-2">Data-Driven Insights</h4>
+                                    <p class="text-purple-700">Optimize operations with real-time analytics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- For Guests -->
+                    <div class="space-y-6">
+                        <h3 class="font-heading text-2xl font-semibold text-primary mb-6">For Guests</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 p-6 bg-yellow-50 rounded-xl">
+                                <i data-lucide="zap" class="w-8 h-8 text-yellow-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-yellow-800 mb-2">Instant Service</h4>
+                                    <p class="text-yellow-700">No waiting in queues or on hold</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-6 bg-indigo-50 rounded-xl">
+                                <i data-lucide="globe" class="w-8 h-8 text-indigo-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-indigo-800 mb-2">Multi-Language Support</h4>
+                                    <p class="text-indigo-700">Communicate in your preferred language</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-6 bg-teal-50 rounded-xl">
+                                <i data-lucide="smartphone" class="w-8 h-8 text-teal-600 mt-1 flex-shrink-0"></i>
+                                <div>
+                                    <h4 class="font-semibold text-teal-800 mb-2">Mobile-First Experience</h4>
+                                    <p class="text-teal-700">Everything you need on your phone</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section id="story" class="story-section section-padding bg-background">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Our Journey
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        From a small startup to revolutionizing hotel operations across India, 
+                        our story is one of innovation, persistence, and customer success.
+                    </p>
+                </div>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="space-y-12">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-12">
+                            <div class="lg:w-1/3">
+                                <div class="bg-secondary text-primary px-6 py-3 rounded-full inline-block">
+                                    <span class="font-semibold">2021 - One Delta</span>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3">
+                                <h3 class="font-heading text-xl font-semibold text-primary mb-3">The Beginning</h3>
+                                <p class="text-text/70">
+                                    Started as One Delta, focusing on AI solutions for small businesses. 
+                                    Identified the massive opportunity in hotel automation.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-12">
+                            <div class="lg:w-1/3">
+                                <div class="bg-accent text-primary px-6 py-3 rounded-full inline-block">
+                                    <span class="font-semibold">2022 - Clinics</span>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3">
+                                <h3 class="font-heading text-xl font-semibold text-primary mb-3">Pilot Program</h3>
+                                <p class="text-text/70">
+                                    Successfully deployed AI receptionist in 5 medical clinics, 
+                                    proving the concept and refining our technology.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item flex flex-col lg:flex-row items-start lg:items-center space-y-6 lg:space-y-0 lg:space-x-12">
+                            <div class="lg:w-1/3">
+                                <div class="bg-primary text-white px-6 py-3 rounded-full inline-block">
+                                    <span class="font-semibold">2023 - UC Marketing Fund</span>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/3">
+                                <h3 class="font-heading text-xl font-semibold text-primary mb-3">Scaling Up</h3>
+                                <p class="text-text/70">
+                                    Secured funding from UC Marketing Fund to expand into the hotel industry. 
+                                    Currently serving 25+ hotels across India.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Market Section -->
+        <section id="vision" class="vision-section section-padding bg-white">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Our Vision & Market Opportunity
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        We're building the future of hotel operations, one AI receptionist at a time.
+                    </p>
+                </div>
+                
+                <div class="vision-content grid lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Counter 1 -->
+                    <div class="text-center p-8 bg-gradient-primary text-white rounded-2xl">
+                        <div class="text-4xl lg:text-5xl font-bold mb-4">
+                            <span class="counter" data-target="100" data-suffix="+">0</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold mb-2">Hotels Target</h3>
+                        <p class="text-white/80">By end of 2024</p>
+                    </div>
+                    
+                    <!-- Counter 2 -->
+                    <div class="text-center p-8 bg-secondary text-primary rounded-2xl">
+                        <div class="text-4xl lg:text-5xl font-bold mb-4">
+                            <span class="counter" data-target="1" data-prefix="₹" data-suffix=" Cr">0</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold mb-2">ARR Target</h3>
+                        <p class="text-primary/80">Annual Recurring Revenue</p>
+                    </div>
+                    
+                    <!-- Counter 3 -->
+                    <div class="text-center p-8 bg-accent text-primary rounded-2xl">
+                        <div class="text-4xl lg:text-5xl font-bold mb-4">
+                            <span class="counter" data-target="50" data-suffix="K">0</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold mb-2">Monthly Savings</h3>
+                        <p class="text-primary/80">Per hotel on average</p>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <h3 class="font-heading text-2xl font-semibold text-primary mb-6">
+                        Market Opportunity
+                    </h3>
+                    <p class="text-lg text-text/70 max-w-4xl mx-auto mb-8">
+                        India has over 50,000 hotels and the hospitality industry is growing at 15% annually. 
+                        With our AI solution, we can capture a significant share of this ₹2,000+ Cr market.
+                    </p>
+                    <a href="#demo" class="btn-primary">Join the Revolution</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are Section -->
+        <section class="team-section section-padding bg-background">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold text-primary mb-6">
+                        Who We Are
+                    </h2>
+                    <p class="text-lg text-text/70 max-w-3xl mx-auto">
+                        A team of passionate technologists and hospitality experts working to 
+                        transform the hotel industry through AI innovation.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Team Card 1 -->
+                    <div class="team-card bg-white p-8 rounded-2xl shadow-brand text-center">
+                        <div class="w-24 h-24 bg-gradient-primary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="user" class="w-12 h-12 text-white"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-2">AI Engineers</h3>
+                        <p class="text-text/70 mb-4">
+                            Experts in natural language processing, machine learning, and conversational AI.
+                        </p>
+                        <div class="flex justify-center space-x-2">
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">NLP</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">ML</span>
+                            <span class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">AI</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Card 2 -->
+                    <div class="team-card bg-white p-8 rounded-2xl shadow-brand text-center">
+                        <div class="w-24 h-24 bg-secondary rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="building" class="w-12 h-12 text-primary"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-2">Hospitality Experts</h3>
+                        <p class="text-text/70 mb-4">
+                            Former hotel managers and industry veterans who understand guest expectations.
+                        </p>
+                        <div class="flex justify-center space-x-2">
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm">Hotels</span>
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm">Guests</span>
+                            <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm">Service</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Card 3 -->
+                    <div class="team-card bg-white p-8 rounded-2xl shadow-brand text-center">
+                        <div class="w-24 h-24 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i data-lucide="trending-up" class="w-12 h-12 text-primary"></i>
+                        </div>
+                        <h3 class="font-heading text-xl font-semibold text-primary mb-2">Growth Team</h3>
+                        <p class="text-text/70 mb-4">
+                            Sales and marketing professionals focused on expanding our hotel network.
+                        </p>
+                        <div class="flex justify-center space-x-2">
+                            <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Sales</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Growth</span>
+                            <span class="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm">Partnerships</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact/Demo Section -->
+        <section id="demo" class="section-padding bg-gradient-primary text-white">
+            <div class="container-custom">
+                <div class="text-center mb-16">
+                    <h2 class="font-heading text-3xl lg:text-4xl font-bold mb-6">
+                        Ready to Transform Your Hotel?
+                    </h2>
+                    <p class="text-xl text-white/80 max-w-3xl mx-auto">
+                        Join 25+ hotels already using our AI receptionist. 
+                        Start your free trial today and see the difference.
+                    </p>
+                </div>
+                
+                <div class="max-w-2xl mx-auto">
+                    <form class="demo-form space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" name="name" required 
+                                       class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" required 
+                                       class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="hotel" class="block text-sm font-medium mb-2">Hotel Name</label>
+                            <input type="text" id="hotel" name="hotel" required 
+                                   class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium mb-2">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" 
+                                      class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-secondary text-primary font-semibold py-4 px-8 rounded-lg hover:bg-secondary-light transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 focus:ring-offset-primary">
+                            Request Free Demo
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-primary text-white py-16">
+        <div class="container-custom">
+            <div class="grid lg:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <img src="./src/assets/logo.svg" alt="Agentic AI Receptionist" class="h-10 w-auto mb-6">
+                    <p class="text-white/80 mb-6 max-w-md">
+                        Revolutionizing hotel operations with AI-powered receptionist technology. 
+                        Making hospitality more efficient, cost-effective, and guest-friendly.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white/60 hover:text-secondary transition-colors duration-200">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-white/60 hover:text-secondary transition-colors duration-200">
+                            <i data-lucide="twitter" class="w-6 h-6"></i>
+                        </a>
+                        <a href="#" class="text-white/60 hover:text-secondary transition-colors duration-200">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-heading text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-white/60 hover:text-secondary transition-colors duration-200">Features</a></li>
+                        <li><a href="#benefits" class="text-white/60 hover:text-secondary transition-colors duration-200">Benefits</a></li>
+                        <li><a href="#story" class="text-white/60 hover:text-secondary transition-colors duration-200">Our Story</a></li>
+                        <li><a href="#demo" class="text-white/60 hover:text-secondary transition-colors duration-200">Request Demo</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-heading text-lg font-semibold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-secondary"></i>
+                            <span class="text-white/60">hello@agenticai.com</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-secondary"></i>
+                            <span class="text-white/60">+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-secondary"></i>
+                            <span class="text-white/60">Mumbai, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-white/60 text-sm">
+                        © 2024 Agentic AI Receptionist. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-white/60 hover:text-secondary text-sm transition-colors duration-200">Privacy Policy</a>
+                        <a href="#" class="text-white/60 hover:text-secondary text-sm transition-colors duration-200">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./src/js/main.js"></script>
+    
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
