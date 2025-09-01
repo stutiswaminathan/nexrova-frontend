@@ -193,17 +193,17 @@ img, video {
 
 /* Custom brand colors and utilities */
 :root {
-  --color-primary: #0A2540;
-  --color-primary-dark: #061A2A;
-  --color-primary-light: #1A3A5A;
-  --color-secondary: #F5A623;
-  --color-secondary-light: #FFB84D;
-  --color-secondary-dark: #E0941A;
-  --color-accent: #4FD1C5;
-  --color-accent-light: #6EE7DF;
-  --color-accent-dark: #38B2AC;
-  --color-background: #F9FAFB;
-  --color-text: #111827;
+  --color-primary: #000000;
+  --color-primary-dark: #000000;
+  --color-primary-light: #1a1a1a;
+  --color-secondary: #60A5FA;
+  --color-secondary-light: #93C5FD;
+  --color-secondary-dark: #3B82F6;
+  --color-accent: #A855F7;
+  --color-accent-light: #C084FC;
+  --color-accent-dark: #9333EA;
+  --color-background: #000000;
+  --color-text: #FFFFFF;
 }
 
 /* Layout utilities */

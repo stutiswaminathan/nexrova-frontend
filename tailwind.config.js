@@ -8,22 +8,22 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#0A2540',
-          dark: '#061A2A',
-          light: '#1A3A5A'
+          DEFAULT: '#000000',
+          dark: '#000000',
+          light: '#1a1a1a'
         },
         secondary: {
-          DEFAULT: '#F5A623',
-          light: '#FFB84D',
-          dark: '#E0941A'
+          DEFAULT: '#60A5FA',
+          light: '#93C5FD',
+          dark: '#3B82F6'
         },
         accent: {
-          DEFAULT: '#4FD1C5',
-          light: '#6EE7DF',
-          dark: '#38B2AC'
+          DEFAULT: '#A855F7',
+          light: '#C084FC',
+          dark: '#9333EA'
         },
-        background: '#F9FAFB',
-        text: '#111827'
+        background: '#000000',
+        text: '#FFFFFF'
       },
       fontFamily: {
         'heading': ['Poppins', 'sans-serif'],

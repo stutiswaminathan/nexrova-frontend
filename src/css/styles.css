@@ -5,14 +5,14 @@
 /* Custom utility classes */
 @layer utilities {
   .text-gradient {
-    background: linear-gradient(135deg, #F5A623 0%, #4FD1C5 100%);
+    background: linear-gradient(135deg, #60A5FA 0%, #A855F7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
   .bg-gradient-primary {
-    background: linear-gradient(135deg, #0A2540 0%, #1A3A5A 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   }
   
   .shadow-brand {
@@ -79,10 +79,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0A2540;
+  background: #60A5FA;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #1A3A5A;
+  background: #A855F7;
 }

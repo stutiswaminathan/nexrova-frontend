@@ -3,33 +3,33 @@
   <rect width="400" height="300" fill="#F9FAFB"/>
   
   <!-- Hotel building -->
-  <rect x="50" y="150" width="120" height="120" fill="#0A2540" rx="4"/>
-  <rect x="60" y="160" width="20" height="20" fill="#F5A623"/>
-  <rect x="90" y="160" width="20" height="20" fill="#F5A623"/>
-  <rect x="120" y="160" width="20" height="20" fill="#F5A623"/>
-  <rect x="60" y="190" width="20" height="20" fill="#F5A623"/>
-  <rect x="90" y="190" width="20" height="20" fill="#F5A623"/>
-  <rect x="120" y="190" width="20" height="20" fill="#F5A623"/>
+  <rect x="50" y="150" width="120" height="120" fill="#000000" rx="4"/>
+  <rect x="60" y="160" width="20" height="20" fill="#60A5FA"/>
+  <rect x="90" y="160" width="20" height="20" fill="#60A5FA"/>
+  <rect x="120" y="160" width="20" height="20" fill="#60A5FA"/>
+  <rect x="60" y="190" width="20" height="20" fill="#60A5FA"/>
+  <rect x="90" y="190" width="20" height="20" fill="#60A5FA"/>
+  <rect x="120" y="190" width="20" height="20" fill="#60A5FA"/>
   
   <!-- AI Robot -->
-  <circle cx="280" cy="120" r="30" fill="#4FD1C5"/>
-  <rect x="260" y="150" width="40" height="60" fill="#4FD1C5" rx="8"/>
-  <circle cx="270" cy="110" r="3" fill="#0A2540"/>
-  <circle cx="290" cy="110" r="3" fill="#0A2540"/>
-  <rect x="275" y="125" width="10" height="2" fill="#0A2540" rx="1"/>
+  <circle cx="280" cy="120" r="30" fill="#A855F7"/>
+  <rect x="260" y="150" width="40" height="60" fill="#A855F7" rx="8"/>
+  <circle cx="270" cy="110" r="3" fill="#000000"/>
+  <circle cx="290" cy="110" r="3" fill="#000000"/>
+  <rect x="275" y="125" width="10" height="2" fill="#000000" rx="1"/>
   
   <!-- Connection lines -->
-  <path d="M170 210 Q200 180 230 210" stroke="#F5A623" stroke-width="3" stroke-dasharray="5,5"/>
+  <path d="M170 210 Q200 180 230 210" stroke="#60A5FA" stroke-width="3" stroke-dasharray="5,5"/>
   
   <!-- Speech bubbles -->
-  <rect x="240" y="80" width="80" height="40" fill="white" rx="8" stroke="#4FD1C5" stroke-width="2"/>
-  <text x="280" y="100" text-anchor="middle" fill="#0A2540" font-family="Inter, sans-serif" font-size="10">Welcome!</text>
+  <rect x="240" y="80" width="80" height="40" fill="white" rx="8" stroke="#A855F7" stroke-width="2"/>
+  <text x="280" y="100" text-anchor="middle" fill="#000000" font-family="Inter, sans-serif" font-size="10">Welcome!</text>
   
   <!-- Guest -->
-  <circle cx="320" cy="240" r="15" fill="#F5A623"/>
-  <rect x="310" y="255" width="20" height="30" fill="#F5A623" rx="4"/>
+  <circle cx="320" cy="240" r="15" fill="#60A5FA"/>
+  <rect x="310" y="255" width="20" height="30" fill="#60A5FA" rx="4"/>
   
   <!-- Check-in icon -->
-  <rect x="320" y="200" width="40" height="25" fill="white" stroke="#0A2540" stroke-width="2" rx="4"/>
-  <text x="340" y="215" text-anchor="middle" fill="#0A2540" font-family="Inter, sans-serif" font-size="8">✓</text>
+  <rect x="320" y="200" width="40" height="25" fill="white" stroke="#000000" stroke-width="2" rx="4"/>
+  <text x="340" y="215" text-anchor="middle" fill="#000000" font-family="Inter, sans-serif" font-size="8">✓</text>
 </svg>
